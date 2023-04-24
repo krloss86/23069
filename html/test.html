@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        header {
+            height: 400px;
+        }
+        .nav {
+            position: sticky;
+            top:0;
+            background-color: aqua;
+        }
+        .content {
+            background-color: red;
+            height: 350px;
+        }
+        .item {
+            height: 250px;
+        }
+        
+        .sticky {
+            background-color: blueviolet;
+        }
+        .item h3{
+            position: sticky;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <ul>
+                <li><a href="">l1</a></li>
+                <li><a href="">l2</a></li>
+                <li><a href="">l3</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            contenido
+        </div>
+    </header>
+       
+    <div class="item sticky">
+        <h3>Subtitulo</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae cupiditate suscipit qui velit, quaerat iure eius, molestiae vero commodi veniam iste laboriosam perspiciatis eaque similique. Minima corrupti rem animi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae cupiditate suscipit qui velit, quaerat iure eius, molestiae vero commodi veniam iste laboriosam perspiciatis eaque similique. Minima corrupti rem animi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vitae cupiditate suscipit qui velit, quaerat iure eius, molestiae vero commodi veniam iste laboriosam perspiciatis eaque similique. Minima corrupti rem animi!</p>
+    </div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+    <div class="item">item</div>
+</body>
+</html>

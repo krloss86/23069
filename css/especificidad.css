@@ -1,0 +1,80 @@
+* {
+    /*quitar los margenes y padding*/
+    padding: 0px;
+    margin: 0px;
+}
+
+/*tipo*/
+h1 {
+    color:green;
+    font-size: 2.5em;
+}
+
+/*clase*/
+.h1 {
+    color: blue; 
+    text-transform: uppercase;
+}
+
+/*id*/
+#h1 {
+    color:blueviolet !important;
+    text-decoration: underline;
+}
+
+/*MODELO DE CAJA*/
+.container {
+    width: 250px;
+    background-color: aquamarine;
+    
+    /*margin-top: 15px;
+    margin-right: 35px;
+    margin-bottom: 55px;
+    margin-left: 25px;*/
+
+    margin: 15px 25px;
+
+    /*padding-top:25px;
+    padding-right:15px;
+    padding-bottom:20px;
+    padding-left:5px;*/
+    padding: 25px 15px; 
+
+    border: 5px solid black;
+
+    /*box-sizing: content-box; /*el width y height NO incluyen el margin, padding o border.*/
+    box-sizing: border-box; /*el width y height NO incluyen el margin, padding o border.*/
+}
+
+.container-v2 {
+    border: 1px solid red;
+    margin-left: 5px;
+    margin-right: 25px;
+
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+
+.container-v2 a {
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    margin-bottom: 5px ;
+}
+
+.container-v2 a[href='https://www.google.com'] {
+    font-size: 20px;
+}
+
+/*selector por atributo
+=: exactamente igual
+^=: comience con
+*=: contenga tal cosa
+$=: termine con "tal cos"
+*/
+li[id*='sta'] {
+    background-color: blue;
+    color:white;
+}

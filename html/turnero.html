@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        :root{
+            --fontSizeBase: 25px;
+            --anunciosSize: 50vw;
+            --turnosSize: 50vw;
+            --primaryColor: #551a8b;
+            --secondaryColor: #ffffff;
+        }
+        
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        html,body {
+            overflow: hidden;
+            font-size: var(--fontSizeBase) /*base para todo*/;
+            background-color: var(--secondaryColor)
+        }
+
+        .head-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 10px;
+            align-items: center;
+            color:rgb(0, 0, 0);
+            background-color: var(--primaryColor);
+            color: #ffffff;
+            height: 10vh;
+            font-weight: bold;
+        }
+        
+        .main-container {
+            display: flex;
+            padding:5px 0px;
+            height: 85vh;
+            width: 100vw;
+        }
+        .anuncios-wrapper {
+            height: 100%;
+            width: inherit;
+        }
+        .anuncios-wrapper > video {
+            width: inherit;
+            max-height: 100%    ;
+        }
+        .anuncios-container {
+            width: var(--anunciosSize);
+            flex-wrap: wrap;
+            display: flex;
+        }
+        .turnos-container {
+            width: var(--turnosSize);
+            display: flex;
+            flex-direction: column;
+            padding: 0px 10px;
+        }
+        .turno {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 10vh;
+            /* height: auto; */
+            margin: 2px;
+            padding: 0px 5px;
+            color:var(--primaryColor);
+            /* background-color: rgb(255, 255, 255); */
+            border: 1px solid var(--primaryColor);
+            border-radius: 5px;
+        }
+
+        /*maquesina*/
+        .marquee-container {
+            display: flex;
+            height: 10vh;
+            background-color: var(--primaryColor);
+        }
+        .marquee {
+            min-width: 100%;
+            padding-top: 5px;
+        }
+        .marquee span {
+            color: var(--secondaryColor);
+            display: inline-block;
+            padding-left: 100%;
+            text-align: center;
+            white-space: nowrap;
+            min-width: 100%;
+            /* font-size: 1.1rem; */
+            animation: marquee 25s linear infinite;
+            animation-delay: 0s;
+        }
+        @keyframes marquee {
+            0% {
+                transform: translate(0, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="head-container">
+        <h1>Sistema de turnos</h1>
+        <span>Hora: 10:00</span>
+    </section>
+    <section class="main-container">
+        <div class="anuncios-container">
+            <div class="anuncios-wrapper">                
+                <video loop autoplay>
+                    <source src="../video/turnero-bcra-jul191.mp4">
+                </video>
+            </div>
+        </div>
+        <div class="turnos-container">
+            <div class="turno">
+                <span>Box:1 Obra SOCIAL</span>
+            </div>
+            <div class="turno">
+                <span>Box:2 ATENCION EMBARAZADAS</span>
+            </div>
+            <div class="turno">
+                <span>Box:3 RETIRO COMPRAS ONLINE</span>
+            </div>
+            <div class="turno">
+                <span>Box:4 DERMOCOSMÉTICA Y PERFUMERÍA</span>
+            </div>
+        </div>  
+    </section>
+    <footer class="marquee-container">
+        <div class="marquee">
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus, fugit sunt earum sint repellat numquam iusto dolorum autem quam atque quibusdam distinctio. Nostrum molestias optio ullam voluptas repellat omnis atque.</span>
+        </div>
+    </footer>
+</body>
+</html>
