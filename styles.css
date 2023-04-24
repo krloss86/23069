@@ -2,9 +2,13 @@
 
 * {
     font-family: 'Alkatra', cursive;
+    background-color: beige;
 }
 
 h1 {
     color: red;
     text-transform: uppercase;
+}
+p {
+    font-size: 16px;
 }
