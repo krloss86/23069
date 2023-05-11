@@ -30,7 +30,12 @@ function toNumber (valor) {
     return valorNumerico;
  }
 
- //asigno un evento via javascript
- const apuntadorAlBotonSuma2 = document.getElementById('btnSumador');
- //agrego un evento=click y asociao una funcion
- apuntadorAlBotonSuma2.addEventListener('click', sumarv2);
+ function definirEventos() {
+    //asigno un evento via javascript
+    const apuntadorAlBotonSuma2 = document.getElementById('btnSumador');
+    //agrego un evento=click y asociao una funcion
+    apuntadorAlBotonSuma2.addEventListener('click', sumarv2);
+ }
+
+ //llamar a la funcion que define los enventos
+ definirEventos();
